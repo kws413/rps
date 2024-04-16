@@ -20,12 +20,20 @@ function main() {
     }
 
     let playerChoice = "";
-    
+
+    let playerScore = 0;
+    let compScore = 0;
+    // Get/store the players choice prior to playing game
     document.getElementById('choices').addEventListener('click', function(event) {
-        playerChoice = event.target.id;
-        document.getElementById('playerChoice').textContent = playerChoice;
+        const temp = event.target.id;
+        if (temp != 'choices') {
+            playerChoice = temp;
+            document.getElementById('playerChoice').textContent = playerChoice;
+        }
     });
 
+    
+    // Play Game Button intiated 
     document.getElementById('play').addEventListener('click', function(event) {
         const computerChoice = getComputerChoice();
         const result = determineWinner(playerChoice, computerChoice);
