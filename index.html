@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Keith's Rock Paper Scissors</title>
 </head>
 <body>
     <header>
         <h1 id="MainTitle">Rock Paper Scissors</h1>
+        <p>By: Keith Sanabria</p>
     </header>
 
     <main>
-        <section id="game">
+        <p>Select a choice and then click play game.</p>
+        <section id="choices">
+            <button id="rock">rock</button>
+            <button id="paper">paper</button>
+            <button id="scissors">scissors</button>
+        </section>
+        <section id="game"> 
             <button type="play">Play Game</button>
+            <h2>Player Choice: <span id="playerChoice">None</span></h2>
+            <h2>Computer Choice: <span id="computerChoice">None</span></h2>
+            <h2>Result: <span id="result">Awaiting choice...</span></h2>
         </section>
     </main>
 </body>
+<script src="script.js"></script>
 </html>
