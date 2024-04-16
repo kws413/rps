@@ -42,8 +42,14 @@ function main() {
         document.getElementById('result').textContent = result;
         if (result === 'You win!'){
             document.getElementById('result').style.backgroundColor = 'green';
+            playerScore++;
+            document.getElementById('playerScore').textContent = playerScore;
+
         } else if (result === 'You lose!') {
             document.getElementById('result').style.backgroundColor = 'red';
+            compScore++;
+            document.getElementById('computerScore').textContent = compScore;
+
         } else {
             document.getElementById('result').style.backgroundColor = 'white';
         }
