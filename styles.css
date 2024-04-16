@@ -5,3 +5,14 @@ header {
     text-align: center;
 }
 
+#choices {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+
+button {
+    width: 400px;
+    font-size: larger;
+}
